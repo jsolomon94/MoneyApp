@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@mynbbf MoneyMove</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">New Birth</span> Bible Fellowship
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Enter New Records</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Past Records</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="brand-heading">@mynbbf</h3>
+                        <p class="intro-text">Money Counting Interface</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+        <!--    <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Grayscale</h2>
+                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+            </div> -->
+
+            <form class="form-horizontal">
+                <fieldset>
+
+                <!-- Form Name -->
+                <legend style="color: white;">Enter New Record</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="idnum">Enter ID Number</label>  
+                  <div class="col-md-5">
+                  <input id="idnum" name="idnum" type="text" placeholder="Member ID" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="fname">First Name</label>  
+                  <div class="col-md-5">
+                  <input id="fname" name="fname" type="text" placeholder="John" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="lname">Last Name</label>  
+                  <div class="col-md-5">
+                  <input id="lname" name="lname" type="text" placeholder="Smitherson" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="cardnum">Card Number</label>  
+                  <div class="col-md-5">
+                  <input id="cardnum" name="cardnum" type="text" placeholder="Optional" class="form-control input-md">
+                    
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="cvc">CVC</label>  
+                  <div class="col-md-2">
+                  <input id="cvc" name="cvc" type="text" placeholder="111" class="form-control input-md">
+                    
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="street">Address</label>  
+                  <div class="col-md-5">
+                  <input id="street" name="street" type="text" placeholder="123 W. Main St." class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="city"></label>  
+                  <div class="col-md-4">
+                  <input id="city" name="city" type="text" placeholder="Compton" class="form-control input-md">
+                    
+                  </div>
+                </div>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="state"></label>
+                  <div class="col-md-2">
+                    <select id="state" name="state" class="form-control">
+                      <option value="1">State</option>
+                      <option value="2">AK</option>
+                      <option value="3">AL</option>
+                      <option value="4">AZ</option>
+                      <option value="5">AR</option>
+                      <option value="6">CA</option>
+                      <option value="7">CO</option>
+                      <option value="8">CT</option>
+                      <option value="9">DE</option>
+                      <option value="10">FL</option>
+                      <option value="11">GA</option>
+                      <option value="12">HI</option>
+                      <option value="13">ID</option>
+                      <option value="14">IL</option>
+                      <option value="15">IN</option>
+                      <option value="16">IA</option>
+                      <option value="17">KS</option>
+                      <option value="18">KY</option>
+                      <option value="19">LA</option>
+                      <option value="20">ME</option>
+                      <option value="21">MD</option>
+                      <option value="22">MA</option>
+                      <option value="23">MI</option>
+                      <option value="24">MN</option>
+                      <option value="25">MS</option>
+                      <option value="26">MO</option>
+                      <option value="27">MT</option>
+                      <option value="28">NE</option>
+                      <option value="29">NV</option>
+                      <option value="30">NH</option>
+                      <option value="31">NJ</option>
+                      <option value="32">NM</option>
+                      <option value="33">NY</option>
+                      <option value="34">NC</option>
+                      <option value="35">ND</option>
+                      <option value="36">OH</option>
+                      <option value="37">OK</option>
+                      <option value="38">OR</option>
+                      <option value="39">PA</option>
+                      <option value="40">RI</option>
+                      <option value="41">SC</option>
+                      <option value="42">SD</option>
+                      <option value="43">TN</option>
+                      <option value="44">TX</option>
+                      <option value="45">UT</option>
+                      <option value="46">VT</option>
+                      <option value="47">VA</option>
+                      <option value="48">WA</option>
+                      <option value="49">WV</option>
+                      <option value="50">WI</option>
+                      <option value="51">WY</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="zip"></label>  
+                  <div class="col-md-2">
+                  <input id="zip" name="zip" type="text" placeholder="Zip" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+
+                <!-- Prepended text-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="tithes">Tithes</label>
+                  <div class="col-md-2">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input id="tithes" name="tithes" class="form-control" placeholder="20.00" type="text">
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Prepended text-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="offering">Offering</label>
+                  <div class="col-md-2">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input id="offering" name="offering" class="form-control" placeholder="20.00" type="text">
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Button Drop Down -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="othermoney1">Other</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <input id="othermoney1" name="othermoney1" class="form-control" placeholder="20.00" type="text">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                          Ministries
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="#">Evangelism</a></li>
+                          <li><a href="#">Building Fund</a></li>
+                          <li><a href="#">Sponsor</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button Drop Down -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="othermoney2">Other</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <input id="othermoney1" name="othermoney1" class="form-control" placeholder="20.00" type="text">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                          Ministries
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="#">Evangelism</a></li>
+                          <li><a href="#">Building Fund</a></li>
+                          <li><a href="#">Sponsor</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button Drop Down -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="othermoney3">Other</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <input id="othermoney1" name="othermoney1" class="form-control" placeholder="20.00" type="text">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                          Ministries
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="#">Evangelism</a></li>
+                          <li><a href="#">Building Fund</a></li>
+                          <li><a href="#">Sponsor</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="submit"></label>
+                  <div class="col-md-4">
+                    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+
+                </fieldset>
+                </form>
+
+
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>Money Record retrieval <br> coming soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; 2016 @mynbbf</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
